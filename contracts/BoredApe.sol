@@ -25,10 +25,10 @@ contract BoredApe is
     
     address proxyRegistryAddress;
 
-    uint256 public maxSupply = 100;
+    uint256 public maxSupply = 10;
 
     string public baseURI; 
-    string public notRevealedUri = "ipfs://QmYUuwLoiRb8woXwJCCsr1gvbr8E21KuxRtmVBmnH1tZz7/hidden.json";
+    string public notRevealedUri = "ipfs://QmPJtA9LMwg5uKLu5UxxCpezd6d6mPMarJsEL1URuWqZqF/hidden.json";
     string public baseExtension = ".json";
 
     bool public paused = false;
@@ -43,11 +43,9 @@ contract BoredApe is
 
     Counters.Counter private _tokenIds;
 
-    uint256[] private _teamShares = [25, 35, 40]; // 3 PEOPLE IN THE TEAM
+    uint256[] private _teamShares = [100]; // 3 PEOPLE IN THE TEAM
     address[] private _team = [
-        0x933572D5F83B00A998102b7bf1a99c0f197E685B, // Admin Account gets 25% of the total revenue
-        0x82de9CE4a49fFeC4C41Cf733126F618eD83a879C, // Test Account gets 35% of the total revenue
-        0x8a7aC9834e2D4487Da22Dc130C97Ee8fBDc85568 // VIP Account gets 40% of the total revenue
+        0x6f31A7B4c7525bB54d40F448429691dfE2034100// VIP Account gets 40% of the total revenue
     ];
 
     constructor(string memory uri, bytes32 merkleroot, address _proxyRegistryAddress)
