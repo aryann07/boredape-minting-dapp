@@ -1,6 +1,6 @@
 # Bored Ape NFT Minting dApp
 
-This a complete example of fullstack NFT minting dApp. **BoredApe** is built with the purpose of providing an _entry point for future NFT Minting Website_ projects.
+This is the fullstack NFT minting dApp **BoredApe** 
 
 To see the demo check this link:
 
